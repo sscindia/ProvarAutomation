@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<style>
+
+			body {
+				font-family: sans-serif;
+			}
+
+			.TestCaseImplTitle {
+				color: blue;
+				font: 0.85em arial;
+				font-weight: bold;
+			}
+
+			.TestCaseImpl .TestItemTitle {
+				color: blue;
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+				margin-bottom: 0.5em;
+			}
+
+			.TestCaseImpl .TestItemOutcome {
+				border-top: 2px solid blue;
+				border-bottom: 2px solid blue;
+			}
+
+			.ApiCallImpl .TestItemTitle{
+				color: blue;
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+				margin-bottom: 0.25em;
+			}
+
+			.ApiCallImpl .TestItemOutcome {
+				border-top: 1px solid blue;
+				border-bottom: 1px solid blue;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				margin-top: 0.25em;
+			}
+
+			.TestItemOutcome {
+				padding-left: 20px;
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				clear: both;
+			}
+			
+			.TestItemOutcome.Successful {
+				color: green;
+				background: url('../../../successful_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestItemOutcome.Failed {
+				color: red;
+				background: url('../../../failed_16x16.gif') no-repeat 0 0.15em;
+				font-weight: bold;
+			}
+
+			.TestItemOutcome.Skipped {
+				color: orange;
+				background: url('../../../skipped_16x16.gif') no-repeat 0 0.15em;
+			}
+
+			.TestOutput {
+				font: 0.9em arial;
+				color: black;
+				margin-top: 0.15em;
+				margin-bottom: 0.15em;
+			}
+
+			.TestOutput.err {
+				font-weight: bold;
+				color: red;
+			}
+
+			.TestOutput.war {
+				font-weight: bold;
+				color: orange;
+			}
+
+			.ApiCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+
+			.TestCaseCallImpl{
+				margin-left: 1em;
+				margin-bottom: 0.4em;
+			}
+			
+		</style>
+	</head>
+	<body><div id='detail-body'>
+	<div style='float: right;'><img src='../../..//provar_logo_400x100.png' height='50'/></div>
+<h2><img src='../../..//testcase_16x16.png' style='height: 24; padding-top: 4px;'/> CreateLead.testcase</h2>
+<div class='TestCaseImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:06 (00:00.000)</span></div>Start of Test Case CreateLead.testcase</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:06 (00:00.014)</span></div>Start of Test Step Salesforce Connect: Provarauto (Test)</div><div class='TestOutput off'>Salesforce connection opened successfully.  Connection name: Provarauto, ResultName: Provarauto, resultScope: Test</div><div class='TestItemOutcome Successful'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:09 (00:02.255)</span></div>Test Step successful.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:09 (00:02.255)</span></div>Start of Test Step On PricebookSelectNew page</div><div class='TestOutput war'>Failed to connect to Master Lock Manager - assuming dead.  Host: localhost, port: 53519, cause: Connection refused</div><div class='TestOutput sev'>Failed to open the Page Object's Web Page.  Page Object: pageobjects.PricebookSelectNew, Web Page: null, Cause: [NoSuchWindowException: no such window: window was already closed&lt;br/&gt;  (Session info: chrome=84.0.4147.89)&lt;br/&gt;  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)&lt;br/&gt;Command duration or timeout: 6 milliseconds&lt;br/&gt;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&lt;br/&gt;System info: host: 'SSCINDIA-M-73NX', ip: '2601:644:8502:ace0:0:0:0:2804%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_221'&lt;br/&gt;Driver info: org.openqa.selenium.chrome.ChromeDriver&lt;br/&gt;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53599}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/Users/smita.scindia/Provar/Workspace2/.provarCaches/.chromeProfiles/profile0}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.89, browserConnectionEnabled=false, proxy=Proxy(direct), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&lt;br/&gt;Session ID: 3af0016734befb011252d6868ed23ce5]</div><div class='ApiCallImpl'><div class='TestItemTitle'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:17 (00:10.983)</span></div>Start of Test Step Set the Username to smita.scindia@meraki.net.provarauto</div><div class='TestOutput sev'>Error doing interaction.  Connection Name: Provarauto, cause: [NoSuchWindowException: no such window: target window already closed&lt;br/&gt;from unknown error: web view not found&lt;br/&gt;  (Session info: chrome=84.0.4147.89)&lt;br/&gt;  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)&lt;br/&gt;Command duration or timeout: 3 milliseconds&lt;br/&gt;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&lt;br/&gt;System info: host: 'SSCINDIA-M-73NX', ip: '2601:644:8502:ace0:0:0:0:2804%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_221'&lt;br/&gt;Driver info: org.openqa.selenium.chrome.ChromeDriver&lt;br/&gt;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53599}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/Users/smita.scindia/Provar/Workspace2/.provarCaches/.chromeProfiles/profile0}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.89, browserConnectionEnabled=false, proxy=Proxy(direct), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&lt;br/&gt;Session ID: 3af0016734befb011252d6868ed23ce5]</div><div class='TestOutput sev'>Error capturing error screenshots.  Connection Name: Provarauto, cause: [NoSuchWindowException: no such window: target window already closed&lt;br/&gt;from unknown error: web view not found&lt;br/&gt;  (Session info: chrome=84.0.4147.89)&lt;br/&gt;  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)&lt;br/&gt;Command duration or timeout: 3 milliseconds&lt;br/&gt;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&lt;br/&gt;System info: host: 'SSCINDIA-M-73NX', ip: '2601:644:8502:ace0:0:0:0:2804%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_221'&lt;br/&gt;Driver info: org.openqa.selenium.chrome.ChromeDriver&lt;br/&gt;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53599}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/Users/smita.scindia/Provar/Workspace2/.provarCaches/.chromeProfiles/profile0}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.89, browserConnectionEnabled=false, proxy=Proxy(direct), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&lt;br/&gt;Session ID: 3af0016734befb011252d6868ed23ce5]</div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:17 (00:11.057)</span></div>Test Step failed.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step Set the Password to Salesforce$7 SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step Click the Log In To Sandbox SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step Click the Leads SKIPPED</div></div><div class='TestOutput sev'>One or more Sub-Test Steps failed.</div><div class='TestOutput sev'>Error opening Salesforce UI Connection.  Connection Name: Provarauto, cause: [NoSuchWindowException: no such window: target window already closed&lt;br/&gt;from unknown error: web view not found&lt;br/&gt;  (Session info: chrome=84.0.4147.89)&lt;br/&gt;  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)&lt;br/&gt;Command duration or timeout: 3 milliseconds&lt;br/&gt;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&lt;br/&gt;System info: host: 'SSCINDIA-M-73NX', ip: '2601:644:8502:ace0:0:0:0:2804%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_221'&lt;br/&gt;Driver info: org.openqa.selenium.chrome.ChromeDriver&lt;br/&gt;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53599}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=/Users/smita.scindia/Provar/Workspace2/.provarCaches/.chromeProfiles/profile0}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.89, browserConnectionEnabled=false, proxy=Proxy(direct), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&lt;br/&gt;Session ID: 3af0016734befb011252d6868ed23ce5]</div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:18 (00:11.917)</span></div>Test Step failed.</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Lead Home screen SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Lead Record Type selection screen SKIPPED</div></div><div class='ApiCallImpl'><div class='TestItemTitle'>Test Step On SF Lead (Meraki Lead) New screen SKIPPED</div></div><div class='TestItemOutcome Failed'><div style='float: right; font-size: 0.8em;'><img src='../../..//timer_16x16.gif' style='height: 16; padding-top: 2px;'/><span style='padding-bottom: 2px;'>14:59:18 (00:11.920)</span></div>Test Case failed.</div></div><div class='TestOutput off'>Salesforce Connection closed successfully.  Name: Provarauto</div>
+	</div></body>
+</html>
